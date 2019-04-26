@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tryRemoveFromArray</title>
+</head>
+<body>
+<script>
+
+    function tryRemoveFromArray(arr,index) {
+        if (index < arr.length && index >= 0){
+            for (i=index;i<arr.length;i++){
+                arr[i] = arr[i+1];
+            }
+            arr.pop();
+        }else {
+            return arr;
+        }
+        return arr;
+    }
+
+    var arr = [12,6,3,7,21,5,7];
+    var index1 = 2;
+    var index2 = 0;
+    var index3 = 7;
+    var index4 = -2;
+
+    console.log(tryRemoveFromArray(arr,index1));
+
+
+
+</script>
+</body>
+</html>

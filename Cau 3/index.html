@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>isPrime</title>
+</head>
+<body>
+<script>
+
+    function isPrime(int) {
+        var count = 1;
+        for (i=2;i<=int;i++){
+            if (int%i===0){
+                count++
+            }
+        }
+        if (count===2){
+            return true;
+        } else return false;
+    }
+
+    console.log(isPrime(12));
+    console.log(isPrime(17));
+
+</script>
+</body>
+</html>
